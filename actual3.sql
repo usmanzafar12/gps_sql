@@ -2,6 +2,7 @@
 CREATE OR REPLACE FUNCTION test_value (avl_id int, imei_id text, col_name varchar(10), col_val varchar(10))
 RETURNS TABLE (record_id int, avl int, val int)  AS 
 $$
+
 BEGIN
 RETURN QUERY EXECUTE '
 WITH get_pos AS 
